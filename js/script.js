@@ -1,13 +1,8 @@
-// Usuario de prueba
+/* Login */
 
 const correo = "admin@alkewallet.com";
 const contrasena = "1234";
-
-// Buscar el formulario
-
 const formulario = document.getElementById("loginForm");
-
-// Verificación
 
 if (formulario) {
 
@@ -21,7 +16,6 @@ if (formulario) {
         if (email === correo && password === contrasena) {
 
             alert("Bienvenido a Alke Wallet");
-
             window.location.href = "menu.html";
 
         } else {
@@ -33,7 +27,8 @@ if (formulario) {
     });
 
 }
-// Depósitos
+
+/* Depositar */
 
 const formularioDeposito = document.getElementById("depositForm");
 
@@ -44,25 +39,25 @@ if (formularioDeposito) {
         event.preventDefault();
 
         let monto = document.getElementById("monto").value;
-
         let mensaje = document.getElementById("mensaje");
 
         if (monto > 0) {
 
             mensaje.textContent = "Depósito realizado por $" + monto;
 
-            $("#mensaje").fadeIn();
-
         } else {
 
-            mensaje.textContent = "Monto insuficiente.";
+            mensaje.textContent = "Ingrese un monto válido.";
 
         }
+
+        $("#mensaje").fadeIn();
 
     });
 
 }
-// transferencias
+
+/* Transferir */
 
 const formularioTransferencia = document.getElementById("transferForm");
 
@@ -73,16 +68,12 @@ if (formularioTransferencia) {
         event.preventDefault();
 
         let contacto = document.getElementById("contacto").value;
-
         let monto = document.getElementById("montoTransferencia").value;
-
         let mensaje = document.getElementById("mensajeTransferencia");
 
         if (contacto !== "" && monto > 0) {
 
             mensaje.textContent = "Se enviaron $" + monto + " a " + contacto + ".";
-
-            $("#mensajeTransferencia").fadeIn();
 
         } else {
 
@@ -90,11 +81,13 @@ if (formularioTransferencia) {
 
         }
 
+        $("#mensajeTransferencia").fadeIn();
+
     });
 
 }
 
-// Transacciones realizadas
+/* Transacciones realizadas */
 
 const tabla = document.getElementById("tablaTransacciones");
 
@@ -134,28 +127,20 @@ if (tabla) {
     }
 
 }
-// jQuery
+
+/* jQuery */
 
 $(document).ready(function () {
 
     $("#mensaje").hide();
-
     $("#mensajeTransferencia").hide();
 
-});
-
-$(document).ready(function(){
-
-    $("#monto").on("input", function(){
-
+    $("#monto").on("input", function () {
         $("#mensaje").hide();
-
     });
 
-    $("#contacto, #montoTransferencia").on("input", function(){
-
+    $("#contacto, #montoTransferencia").on("input", function () {
         $("#mensajeTransferencia").hide();
-
     });
 
 });

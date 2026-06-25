@@ -65,7 +65,7 @@ button{
 button:hover{
     background-color: #5B2A86;
 }
-/* Tabla */
+/* Enlaces */
 
 a{
     color: #5B2A86;
@@ -124,4 +124,25 @@ td{
 
 .nav-link:hover{
     color: #E9D8FD !important;
+}
+
+/* Responsividad */
+
+@media screen and (max-width: 768px){
+
+    main{
+        width: 95%;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    table{
+        font-size: 14px;
+    }
 }
