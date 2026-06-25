@@ -1,0 +1,127 @@
+/* Paleta de colores */
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #F3E8FF;
+    color: #333333;
+    margin: 0;
+}
+/* Header */
+
+header{
+    background-color: #5B2A86;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* Main */
+
+main{
+    width: 80%;
+    margin: 30px auto;
+}
+/* Secciones */
+
+section{
+    background-color: white;
+    border: 1px solid #D8B4FE;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+/* Títulos */
+
+h1{
+    margin: 0;
+}
+
+h2{
+    color: #5B2A86;
+}
+/* Formularios */
+
+label{
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #B197FC;
+    border-radius: 5px;
+}
+/* Botones */
+
+button{
+    background-color: #7B4CBF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #5B2A86;
+}
+/* Tabla */
+
+a{
+    color: #5B2A86;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+/* tablas */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: #5B2A86;
+    color: white;
+}
+
+th,
+td{
+    border: 1px solid #D8B4FE;
+    padding: 10px;
+    text-align: center;
+}
+
+/* navegación */
+
+.navbar{
+    background-color: #5B2A86 !important;
+}
+
+/* botones */
+
+.btn-primary{
+    background-color: #7B4CBF;
+    border-color: #7B4CBF;
+}
+
+.btn-primary:hover{
+    background-color: #5B2A86;
+    border-color: #5B2A86;
+}
+
+.navbar-brand{
+    color: white !important;
+}
+
+/* links menú */
+
+.nav-link{
+    color: white !important;
+}
+
+.nav-link:hover{
+    color: #E9D8FD !important;
+}
